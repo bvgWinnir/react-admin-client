@@ -154,7 +154,7 @@ export default class Category extends Component {
         this.form.resetFields()
         const result = await reqAddCategory(name, parentId)
         if(result.status===0) {
-
+       
           // 添加的分类就是当前分类列表下的分类
           if(parentId===this.state.parentId) {
             // 重新获取当前分类列表显示
